@@ -1,0 +1,10 @@
+<section class="p-5">
+    <div class="container">
+        <h2 class="text-center pb-5">Cerca L'offerta più Adatta a Te</h2>
+        <div class="row text-center" id="listaOfferte">
+            <% offerte.forEach((offerta) => { %>
+                <%- include('offertaSingolaUR', {offerta}); -%>              
+            <% }); %>
+        </div>
+    </div>
+</section>

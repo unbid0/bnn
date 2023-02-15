@@ -1,0 +1,10 @@
+<div class="container p-2">
+    <div class="card p-2">
+        <div class="card-body">
+            <h5 class="card-title"><%= notizia.titolo %></h5>
+            <p class="card-text"><%= notizia.testo %></p>
+            <p class="card-text text-end text-muted">Pubblicata il <%= moment(notizia.data).format("DD/MM/YYYY") %></p>
+            <button class="btn position-absolute top-0 end-0 p-2" id="<%= notizia.titolo %>" onclick="eliminaNotizia(this)"><i class="bi bi-x-lg"></i></button>
+        </div>
+    </div>
+</div>

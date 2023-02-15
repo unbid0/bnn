@@ -1,0 +1,176 @@
+/*stile nav*/
+
+nav{
+  background: #20242E;
+}
+
+.nav-link{
+  color: #F4F1F0;
+}
+
+/*stile mission*/
+
+#mission{
+  background: #20242E;
+  color: #F4F1F0;
+}
+
+#imp{
+  color: #ffa500;
+}
+
+#btnAboutUs{
+  background-color: #ffa500;
+  color: #F4F1F0;
+}
+
+/*stile newsletter*/
+
+#newsletter{
+  background: #87b6be;
+  color: #F4F1F0;
+}
+
+#btnNewsletter{
+  border: 3px solid #F4F1F0;
+  padding: 13px 40px;
+  color: #F4F1F0;
+}
+
+/*quando il cursore passa sul bottone viene eseguito pulsate*/
+#btnNewsletter:hover{
+  animation: pulsate 2s
+  ease-in-out;
+}
+
+/*effetto intorno al bottone*/
+@keyframes pulsate {
+  0%{
+      box-shadow: 
+      0 0 20px #F4F1F0,
+      0 0 40px #F4F1F0;
+      ;
+  }
+}
+
+/*stile cards*/
+
+#cards{
+  background: #ffffff;
+}
+
+/*stile prima carta*/
+#firstCard{
+  background: #20242E;
+  color: #F4F1F0;
+}
+
+#iFirst{
+  color: #F4F1F0;
+}
+
+#h3First{
+  color: #F4F1F0;
+}
+
+#btnFirst{
+  background: #87b6be;
+  color: #F4F1F0;
+}
+
+/*stile seconda carta*/
+#secondCard{
+  background: #87b6be;
+  color: #F4F1F0;
+}
+
+#iSecond{
+  color: #F4F1F0;
+}
+
+#h3Second{
+  color: #F4F1F0;
+}
+
+#btnSecond{
+  background: #20242E;
+  color: #F4F1F0;
+}
+
+/*stile terza carta*/
+
+#thirdCard{
+  background: #20242E;
+  color: #F4F1F0;
+}
+
+#iThird{
+  color: #F4F1F0;
+}
+
+#h3Third{
+  color: #F4F1F0;
+}
+
+#btnThird{
+  background: #87b6be;
+  color: #F4F1F0;
+}
+
+
+/*stile mappa*/
+
+#map{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/*stile icone breadcrumb*/
+
+.bi-instagram{
+  color: #20242E;
+}
+
+.bi-facebook{
+  color: #20242E;
+}
+
+.bi-arrow-up-circle{
+  color: #87b6be;
+}
+
+#legal{
+  font-size: 70%;
+}
+
+/*stile cookie*/
+
+#consent-popup{
+  background-color: #D8D8D8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+/*pagina unipolrenatal*/
+
+/*cerca*/
+
+#cerca{
+  background: #87b6be;
+  color: #F4F1F0;
+}
+
+@media (min-width: 768px) {
+  #searchInput{
+      width: 50%;
+  }
+}
+
+#btnCerca{
+  background: #20242E;
+  color: #F4F1F0;
+}
