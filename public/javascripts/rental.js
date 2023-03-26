@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 function inserisciRental(param){
 
     const marca = document.getElementById('marca').value.toLowerCase();
@@ -31,7 +33,7 @@ function filtraOfferte(param){
 
 
 async function cercaOfferte(marca){
-    await fetch('http://localhost:3000/unipolrental/cercaOfferta/', {
+    const response = await fetch('http://localhost:3000/unipolrental/cercaOfferta/', {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json',
@@ -40,13 +42,15 @@ async function cercaOfferte(marca){
             marca:marca,
         }), // Conversion in JSON format
     })
-    .then(response => response.json())
-    .then(data =>{
+
+    const risposta = await response.json();
+
+    
         const listino = document.getElementById("listaOfferte");
         while(listino.firstChild){
             listino.removeChild(listino.firstChild);
         }
-        for (const offerta of data.offerte){
+        for (const offerta of risposta){
 
             const off = document.createElement('div');
             off.classList.add('col');
@@ -63,10 +67,6 @@ async function cercaOfferte(marca){
             off.appendChild(img);
             
         }
-    })
-    .catch((error) => {
-            console.error('Error:', error);
-            });
 }
 
 

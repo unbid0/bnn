@@ -23,8 +23,9 @@ router.get('/', function(req, res, next) {
 router.post('/cercaOfferta', function (req, res){
   const marca = req.body.marca;
   dao.cercaOfferta(marca).then((offerte) =>{
-   console.log({offerte});
-  });
+    console.log({offerte});
+    res.json(offerte);
+   });
 });
 
 module.exports = router;
